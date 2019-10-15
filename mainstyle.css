@@ -1,0 +1,55 @@
+span{
+    color:blue;
+   
+ 
+   
+}
+.blueColor{
+        color:blue;
+        font-family:Arial;
+        font-size:24px;
+}
+
+.greencolor{
+color: limegreen;
+font-family:Arial;
+font-size:24px;
+
+}
+#specificColor{
+    color:blue;
+    font-family:verdana;
+    font-size:24px;
+}
+
+#specificLink{
+    color:purple;
+    font-family:arial;
+    font-size:28px;
+}
+
+.pinkcolor{
+color: pink;
+font-family:arial;
+font-size:24px;
+
+}
+.image{
+background-image: url("yuna2.jpg");
+
+}
+
+
+body{
+background-image:  url(yuna2.jpg)
+
+}
+body{
+background-color: gray
+
+
+
+}
+
+
+
