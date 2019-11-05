@@ -1,4 +1,5 @@
-scrpt.jsfunction setup() {
+scrpt.js 
+function setup() {
   createCanvas(400, 400);
 }
 
