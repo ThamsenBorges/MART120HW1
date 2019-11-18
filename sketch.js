@@ -6,8 +6,7 @@ function setup() {
 function draw() {
   background(100);
   //Draw PLAYER
-  fill(player.red, player.green, player.blue);
-  circle(player.x, player.y, player.diameter);
+  drawplayer
   //Draw first obstacle: Circle
   fill(obs1.red, obs1.green, obs1.blue);
   circle(obs1.x, obs1.y, obs1.diameter);
@@ -102,4 +101,7 @@ function checkForExit() {
       textSize(72);
       text('YOU WIN!', 200, 300);
   }
-}
+  function drawplayer(){
+  fill(player.red, player.green, player.blue);
+  circle(player.x, player.y, player.diameter);
+}}
