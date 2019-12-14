@@ -3,9 +3,9 @@ function setup() {
   entities = [player, obs1, obs2]
   noStroke()
 }
-function drawObstacle(obstacle, shapeCallback) {
+function drawObstacle(obstacle) {
   fill(obstacle.red, obstacle.green, obstacle.blue);
-  shapeCallback(obstacle.x, obstacle.y, obstacle.size);
+  obstacle.shapeCallback(obstacle.x, obstacle.y, obstacle.size);
   obstacle.x = obstacle.x + random(30);
   obstacle.x = obstacle.x - random(30);
   obstacle.y = obstacle.y + random(30);
@@ -16,9 +16,9 @@ function draw() {
   //Draw PLAYER
   drawPlayer();
   //Draw first obstacle: Circle
-  drawObstacle(obs1, circle);
+  drawObstacle(obs1);
   //Draw second obstacle: Square
-  drawObstacle(obs2, square);
+  drawObstacle(obs2);
   drawMousecircle();
   drawExit();
 
@@ -43,14 +43,17 @@ var obs1 = {
   red: 165, green: 33, blue: 233,
   x: 83,
   y: 76,
-  size: 62
+  size: 62,
+  shapeCallback: function() {circle(this.x,this.y,this.size)}
 }
 
 var obs2 = {
   red: 65, green: 42, blue: 233,
   x: 46,
   y: 98,
-  size: 90
+  size: 90,
+  shapeCallback: function() {square(this.x,this.y,this.size)}
+
 }
 
 function checkEdges(entity) {

@@ -23,7 +23,7 @@ font-size:24px;
 }
 
 #specificLink{
-    color:purple;
+    color:blue;
     font-family:arial;
     font-size:28px;
 }
@@ -34,22 +34,10 @@ font-family:arial;
 font-size:24px;
 
 }
-.image{
-background-image: url("yuna2.jpg");
-
-}
-
 
 body{
-background-image:  url(yuna2.jpg)
-
-}
-body{
-background-color: gray
+background-color: teal
 
 
 
 }
-
-
-
